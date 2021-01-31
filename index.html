@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Ubuntu&display=swap" rel="stylesheet">
+    <title>Dictionary | Search any word!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="main">
+                <div class="logo">
+                    Dictionary
+                </div>
+                <div class="toggle" onclick="toggle();"></div>
+                <div class="center">
+                    Welcome to Dictionary!
+                </div>
+
+            </div>
+
+
+        </div>
+    </header>
+    <section>
+        <div class="home">
+            <div class="container">
+                <div class="heading">
+                    <h1>Search for any words and get the proper meaning!</h1>
+                </div>
+                <div class="search">
+                    <h2>Search</h2>
+                    <input type="text" id="word" placeholder="Enter the word to search">
+                    <button class="btn" id="searchBtn">Search</button>
+                    <button class="btn" id="clearBtn">Clear Results</button>
+                </div>
+                <div class="head">
+                    <h2>Results..</h2>
+                </div>
+                <ul class="results" id="results">
+                    Search to get results
+                </ul>
+
+            </div>
+        </div>
+    </section>
+</body>
+<script src="script.js"></script>
+<script>
+    function toggle() {
+        var menuToggle = document.querySelector('.toggle');
+        var form = document.querySelector('.formbox');
+        menuToggle.classList.toggle('active');
+        form.classList.toggle('active');
+
+    }
+</script>
+<script>
+    // Get the input field
+    var input = document.getElementById("word");
+
+    // Execute a function when the user releases a key on the keyboard
+    input.addEventListener("keyup", function (event) {
+        // Number 13 is the "Enter" key on the keyboard
+        if (event.keyCode === 13) {
+            // Cancel the default action, if needed
+            event.preventDefault();
+            // Trigger the button element with a click
+            document.getElementById("searchBtn").click();
+        }
+    });
+</script>
+
+</html>

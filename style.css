@@ -1,0 +1,135 @@
+html,body{
+    margin: 0%;
+    padding: 0%;
+}
+:root{
+    --primary:#121113;
+    --secondary:white;
+    --noteprimary:white;
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Ubuntu', sans-serif;
+}
+header .container{
+    display: flex;
+    background-color: #121113;
+    color: #F7F7F2;
+    align-items: center;
+    justify-content: space-between;
+    height: 2.5rem;
+    padding: 10px 20px;
+    font-family:'Ubuntu', sans-serif;
+}
+.main{
+    display: flex;
+    width:-webkit-fill-available;
+    align-items: center;
+}
+
+.logo{
+    text-decoration: none;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    width: 33%;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+.center{
+    width: 33%;
+    font-size: 2rem;
+    font-family:'Ubuntu', sans-serif;
+    text-align: center;
+}
+.formbox{
+    display: flex;
+    align-items: center;
+
+}
+.formbox input{
+    height: 25px;
+    color: white;
+    background-color: transparent;
+    border-radius: 4px;
+    width: 200px;
+    margin-right: 10px;
+    border: 2px solid white;
+}
+.home{
+    background-color: #F7F7F2;
+    color: #121113;
+    position: relative;
+    min-height: 100vh;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+.home .container{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    padding: 0% 15%;
+}
+
+
+.heading{
+    font-size: 1.4rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.search{
+    color: var(--primary);
+    width: 100%;
+    margin-top: 100px;
+}
+.search #word{
+    width: 100%;
+    margin-top: 2%;
+    border-color: var(--primary);
+    border-radius: 5px;
+    height: 30px;
+    padding: 0px 5px;
+    font-size: 1rem;
+}
+.head h2{
+    text-align: center;
+    font-family:  'Ubuntu', sans-serif;
+    margin: 10px;
+}
+
+li{
+    padding: 5px 0px;
+    list-style-type: lower-roman;
+    /* text-transform: capitalize; */
+}
+
+
+.btn{
+    position: relative;
+    background-color: transparent;
+    padding: 4px;
+    color:  var(--primary);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    border: 2px solid var(--primary);
+    transition-duration: 0.5s;    
+}
+.btn:hover{
+    background-color: var(--primary);
+    color: white;
+}
+#clearBtn:hover{
+    background-color: rgba(255, 0, 0, 0.719);
+    /* color: black; */
+}
